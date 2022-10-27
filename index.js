@@ -19,7 +19,7 @@ app.get('/courses', (req, res) => {
 app.get('/course/:id', (req, res) => {
     const id = req.params.id;
     const courseData = coursesDetails.find(course => course.courseId == parseInt(id));
-    res.send(courseData);    
+    res.send(courseData);       
 })
 
 app.listen(port, () => {
